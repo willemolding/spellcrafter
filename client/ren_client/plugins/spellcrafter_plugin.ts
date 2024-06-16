@@ -126,6 +126,9 @@ export class SpellcrafterPlugin extends RenJS.Plugin {
                 case "hideBarriers":
                     // this.barrierImages.forEach(img => { img.visible = false });
                     return Promise.resolve();
+                case "showDeathReport":
+                    this.showDeathReport();
+                    return Promise.resolve();
                 default:
                     throw new Error("invalid method: " + method);
             }
@@ -270,6 +273,10 @@ export class SpellcrafterPlugin extends RenJS.Plugin {
 
     async hideCard(): Promise<void> {
         this.cardDisplayGroup.visible = false;
+    }
+
+    showDeathReport(): void {
+        
     }
 
     _setLastForagedItem(lastForagedItem: number | null): void {

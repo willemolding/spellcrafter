@@ -4,7 +4,6 @@ start:
 
   - show outside: WITH FADE
 
-
   - if ({time} > 0):
     - text: Welcome back Acolyte
   - else:
@@ -372,5 +371,5 @@ endGame:
 
 deathScreen:
   - hide ALL:
-  - text: There is nothing more see here, although your achievements have been recorded forever.
-  - text: Consider starting a new game.
+  - show explosion: WITH FADE
+  - call SpellCrafter: showDeathReport

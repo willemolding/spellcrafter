@@ -8,6 +8,7 @@ backgrounds:
   meadow: assets/backgrounds/meadow.png
   volcano: assets/backgrounds/volcano.png
   cave: assets/backgrounds/cave.png
+  explosion: assets/backgrounds/explosion.png
 
 characters:
   wizard:
